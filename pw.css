@@ -1,0 +1,85 @@
+.nav li{
+    display: inline-block;
+    padding: 20px;
+}
+.nav{
+    text-align: center;
+}
+
+.nvh{
+    background-image: url("image_fx_a_sign_witten_pyapps_floating_over_a_city_sim.png");
+    background-size: 100% 100%;
+    /* opacity: 0.8; */
+    height: 80vh;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+.nvh::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 44, 44, 0.447); /* Dark color with 50% opacity */
+}
+
+.intro{
+    background-color: rgba(88, 91, 87, 0.943);
+    height:35vh;
+    display: flex;
+    justify-content: space-around;
+}
+.insta{
+    height: 45vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-image: url("image_fx_arcane_league_of_legends_futuristic_city_with.png");
+    background-size: cover;
+    /* opacity: 0.8; */
+    background-repeat:round;
+    position: relative;
+    overflow: hidden;
+}
+
+.ista::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 44, 44, 0.447); /* Dark color with 50% opacity */
+}
+.ista_content{
+    flex-grow: 1;
+
+    
+}
+.ista img{
+    width: 50%;
+    height: 100%;
+}
+
+.pyintro{
+    position: relative;
+    
+
+}
+
+.pyoverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 44, 44, 0.447); /* Dark color with 50% opacity */
+
+}
+
+.pyintro img{
+    width: 100%;
+    height: 100%;
+}
