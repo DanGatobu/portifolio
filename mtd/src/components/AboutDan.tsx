@@ -1,4 +1,4 @@
-import React from 'react'
+
 import imageAssetsVar from '../assets/images/imageAssets'
 import { AboutContent } from '../assets/DanInfo'
 import {motion} from 'framer-motion'
