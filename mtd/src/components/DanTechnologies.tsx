@@ -25,7 +25,15 @@ import {
     // Animation Variants
     const iconVariants = (duration: number) => ({
       initial: { y: -10 },
-      animate: { y: [10, -10], transition: { duration, repeat: Infinity, ease: 'linear', repeatType: 'reverse' } },
+      animate: {
+        y: [10, -10],
+        transition: {
+          duration,
+          repeat: Infinity,
+          ease: 'linear',
+          repeatType: 'reverse' as 'reverse', // Explicitly cast to the correct type
+        },
+      },
     });
   
     return (
@@ -48,7 +56,7 @@ import {
           className="flex flex-wrap items-center justify-center gap-4"
         >
           {/* Render All Icons */}
-          {[ 
+          {[
             { icon: FaPython, color: "text-cyan-500" },
             { icon: FaReact, color: "text-cyan-500" },
             { icon: FaDatabase, color: "text-cyan-500" },

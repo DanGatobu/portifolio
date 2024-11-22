@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 const HeroPart = () => {
 
-const container=(delay)=>({
+const container=(delay:number)=>({
     hidden:{opacity:0 ,x:-100},
     visible:{opacity:1, transition:{delay:delay, duration:0.5},x:0}
 })
