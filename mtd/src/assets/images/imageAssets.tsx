@@ -16,6 +16,7 @@ import reactshp from './reactshp.png';
 import yemapi from './yemapi.png';
 import fxb from './fxb.png';
 import abtme from './abtme.png';
+import chillguy from './chillguy.webp'
 
 const imageAssetsVar = {
     logoIcon,
@@ -33,7 +34,8 @@ const imageAssetsVar = {
     gap,
     reactshp,
     yemapi,fxb,
-    abtme
+    abtme,
+    chillguy
 
 
 }
