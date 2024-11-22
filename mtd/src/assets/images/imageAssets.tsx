@@ -6,8 +6,16 @@ import background from './background.png';
 import background2 from './background2.jpg';
 import projectsIcon from './projects.png';
 import contactIcon from './contact.png';
-
-
+import pydfui from './pydfui.png';
+import pdfapi from './pdfapi.png';
+import jbap from './jbap.png';
+import instagrower from './instagrower.png';
+import djangoecom2 from './djanoecom2.png';
+import gap from './gap.png';
+import reactshp from './reactshp.png';
+import yemapi from './yemapi.png';
+import fxb from './fxb.png';
+import abtme from './abtme.png';
 
 const imageAssetsVar = {
     logoIcon,
@@ -17,7 +25,17 @@ const imageAssetsVar = {
     background,
     background2,
     projectsIcon,
-    contactIcon
+    contactIcon,
+    pydfui,pdfapi,
+    jbap,
+    instagrower,
+    djangoecom2,
+    gap,
+    reactshp,
+    yemapi,fxb,
+    abtme
+
+
 }
 
 export default imageAssetsVar;
