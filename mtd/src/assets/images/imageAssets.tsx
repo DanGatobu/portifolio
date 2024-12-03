@@ -17,6 +17,9 @@ import yemapi from './yemapi.png';
 import fxb from './fxb.png';
 import abtme from './abtme.png';
 import chillguy from './chillguy.webp'
+import mpyjuiceui from './mpyjuiceui.png';
+import mpyjuiceapi from './mpyjuiceapi.png';
+import ytdownloader from './ytdownloader.png';
 
 const imageAssetsVar = {
     logoIcon,
@@ -35,7 +38,10 @@ const imageAssetsVar = {
     reactshp,
     yemapi,fxb,
     abtme,
-    chillguy
+    chillguy,
+    mpyjuiceui,
+    mpyjuiceapi,
+    ytdownloader
 
 
 }

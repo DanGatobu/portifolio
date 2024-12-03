@@ -59,6 +59,46 @@ export const Projects = [
         technologies: ["FastAPI", "Vercel", "Python"]
     },
     {
+        title: "MP3 Audio Downloader API (FastAPI)",
+        image: imageAssetsVar.mpyjuiceui, // Replace with the appropriate image import
+        description: (
+            <>
+                A FastAPI-based backend that fetches and serves MP3 audio files from YouTube videos. This API leverages yt-dlp and FFmpeg to extract and process audio files. The main deployment is hosted on an AWS EC2 instance . 
+                <br />
+                Additionally, a containerized version of the application is available for portability and scalability, hosted on Docker Hub. 
+                <br />
+                Make requests at{' '}
+                <a href="http://35.176.220.178:8000/" target="_blank" rel="noopener noreferrer">
+                    http://35.176.220.178:8000/
+                </a>.
+                <br />
+                View the Docker container at{' '}
+                <a href="https://hub.docker.com/r/dodan9/mpy3juices" target="_blank" rel="noopener noreferrer">
+                    Docker Hub - MP3 Audio Downloader
+                </a>.
+            </>
+        ),
+    technologies: ["FastAPI","FFmpeg", "Docker", "AWS EC2", "Python","AWS ECS","AWS Lambda","AWS Boto3","AWS API Gateway","AWS Load Balancer"]
+    },
+
+    
+    
+    {
+        title: "Mp3 Audio downloader UI (React)",
+        image: imageAssetsVar.mpyjuiceui, // Add the appropriate image import
+        description: (
+            <>
+                A React frontend that interacts with the MP3 Audio Downloader API and Youtube Data API , allowing users to search for YouTube videos and download the corresponding MP3 audio files. The UI provides a seamless experience for users to access and manage their downloaded audio files.
+                <br />
+                Visit at{' '}
+                <a href="https://mpyjuice-ui.vercel.app/" target="_blank" rel="noopener noreferrer">
+                https://mpyjuice-ui.vercel.app/
+                </a>
+            </>
+        ),
+        technologies: ["QT", "Selenium", "PostgreSQL", "Python"]
+    },
+    {
         title: "FastAPI Integration for Yemot and Donary APIs",
         image: imageAssetsVar.yemapi, // Add the appropriate image import
         description: (
@@ -73,6 +113,8 @@ export const Projects = [
         ),
         technologies: ["FastAPI", "Python", "Yemot", "Donary API"]
     },
+    
+    
     {
         title: "AI-Powered Trading Bot",
         image: imageAssetsVar.fxb, // Add the appropriate image import
