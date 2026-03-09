@@ -8,6 +8,7 @@ import DanTechnologies from './components/DanTechnologies'
 import DanExperince from './components/DanExperince'
 import DanProjects from './components/DanProjects'
 import DanContact from './components/DanContact'
+import DanChat from './components/DanChat'
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
       <DanProjects />
       <DanContact />
       </div>
+      <DanChat />
     
   </div>
   )
