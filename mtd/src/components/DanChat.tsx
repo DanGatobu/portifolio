@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import type React from "react";
 import { Projects, Experience, AboutContent, contactMe } from "../assets/DanInfo";
 
 // ── types ──────────────────────────────────────────────────────────────────
@@ -22,13 +23,36 @@ const LS_KEY_PASS  = "dan_chat_authed";
 const LS_KEY_CHATS = "dan_chat_sessions";
 const CORRECT_PASS = "dan2024";
 
+// ── extract plain text + hrefs from a JSX node recursively ───────────────
+function jsxToText(node: React.ReactNode): string {
+  if (!node) return "";
+  if (typeof node === "string" || typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(jsxToText).join("");
+  if (typeof node === "object" && "props" in (node as object)) {
+    const el = node as React.ReactElement<{ href?: string; children?: React.ReactNode }>;
+    const childText = jsxToText(el.props.children);
+    // if it's an anchor, append the href so URLs are preserved
+    if (el.type === "a" && el.props.href) {
+      return `${childText} (${el.props.href})`;
+    }
+    return childText;
+  }
+  return "";
+}
+
 // ── default "about" block pulled from DanInfo ──────────────────────────────
 function buildDefaultAbout(): string {
   const expLines = Experience.map(
     (e) => `${e.role} at ${e.company} (${e.year})\n${e.description}\nTech: ${e.technologies.join(", ")}`
   ).join("\n\n");
 
-  return `About:
+  return `Full Name: Dan Gatobu
+GitHub: https://github.com/DanGatobu
+LinkedIn: https://www.linkedin.com/in/dan-gatobu-012544214/
+Fiverr: https://www.fiverr.com/dan_new_ton
+Upwork: https://www.upwork.com/freelancers/~01128993ebc1bd665b
+
+About:
 ${AboutContent}
 
 Experience:
@@ -50,20 +74,21 @@ function saveChats(chats: ChatSession[]) {
 function projectToText(idx: number): string {
   const p = Projects[idx];
   if (!p) return "";
-  const desc = typeof p.description === "string" ? p.description : "See portfolio for details.";
+  // extract plain text + URLs from JSX description
+  const desc = typeof p.description === "string" ? p.description : jsxToText(p.description);
   return `Project: ${p.title}\nTechnologies: ${p.technologies.join(", ")}\nDescription: ${desc}`;
 }
 
 function buildSystemPrompt(aboutText: string, attachedIndexes: number[]): string {
   const projectsText = attachedIndexes.map(projectToText).join("\n\n");
-  return `You are a job application assistant. Use the context below to craft tailored, professional job applications, cover letters, or responses. Always write in first person.
+  return `You are a job application assistant for Dan Gatobu, a software developer based in Nairobi, Kenya.
+You know everything about Dan from the context below. Always refer to him by name when relevant, always write responses in first person as Dan, and always use the exact links, emails, and details provided — never say you don't have information that is clearly in the context.
 
-== Context ==
+== Dan's Full Profile ==
 ${aboutText}
 
-${projectsText ? `== Attached Projects ==\n${projectsText}` : ""}
-
-Be professional, concise, and tailor every response to the job/role the user describes.`;
+${projectsText ? `== Attached Projects ==\n${projectsText}\n` : ""}
+When writing cover letters or applications, be professional, specific, and tailor every response to the job/role described. Reference relevant projects and experience by name.`;
 }
 
 // ── main component ─────────────────────────────────────────────────────────
