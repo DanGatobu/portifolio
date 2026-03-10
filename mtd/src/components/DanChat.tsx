@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import type React from "react";
-import { Projects, Experience, AboutContent, contactMe } from "../assets/DanInfo";
+import { Projects, Experience, AboutContent, contactMe, TechSummary } from "../assets/DanInfo";
 
 // ── types ──────────────────────────────────────────────────────────────────
 interface Message { role: "user" | "model"; text: string; }
@@ -62,12 +62,23 @@ GitHub: https://github.com/DanGatobu
 LinkedIn: https://www.linkedin.com/in/dan-gatobu-012544214/
 Fiverr: https://www.fiverr.com/dan_new_ton
 Upwork: https://www.upwork.com/freelancers/~01128993ebc1bd665b
+Portfolio: https://meetdan.vercel.app/
 
 About:
 ${AboutContent}
 
 Experience:
 ${expLines}
+
+Technical Skills:
+Languages: ${TechSummary.languages.join(", ")}
+Frameworks: ${TechSummary.frameworks.join(", ")}
+Databases: ${TechSummary.databases.join(", ")}
+Cloud & DevOps: ${TechSummary.cloudDevOps.join(", ")}
+APIs & Integrations: ${TechSummary.apis.join(", ")}
+Automation: ${TechSummary.automation.join(", ")}
+AI/ML: ${TechSummary.aiMl.join(", ")}
+Media Processing: ${TechSummary.mediaProcessing.join(", ")}
 
 Contact:
 Email: ${contactMe.email} | Phone: ${contactMe.phoneNo} | Location: ${contactMe.address}`;
