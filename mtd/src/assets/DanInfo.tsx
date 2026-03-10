@@ -36,51 +36,49 @@ export const TechSummary = {
 };
 
 export const Projects = [
-    // ── Full-Stack / Live Platforms ────────────────────────────────────────
+    // ── Live Projects ──────────────────────────────────────────────────────
     {
         title: "AllTools — Developer Utilities Platform",
         image: imageAssetsVar.pydfui,
-        description: "A web platform aggregating practical developer utilities into a single, fast, mobile-friendly interface. React frontend deployed on Vercel, FastAPI backend on AWS EC2/GCP VM, optimized for low-latency API responses and reliable uptime. Live: https://www.alltools.sbs/",
+        description: "A web platform aggregating practical developer utilities into a single, fast, mobile-friendly interface. React frontend deployed on Vercel, FastAPI backend on AWS EC2/GCP VM, optimized for low-latency API responses and reliable uptime.",
         technologies: ["React", "FastAPI", "Vercel", "AWS EC2", "GCP"],
         liveUrl: "https://www.alltools.sbs/",
     },
     {
         title: "DevToolss — Developer Tools Directory",
         image: imageAssetsVar.pydfui,
-        description: "A curated developer tools discovery site focused on discoverability and quick access. Clean, responsive React UI with a FastAPI backend deployed on Koyeb for efficient hosting and scaling. Live: https://www.devtoolss.sbs/",
+        description: "A curated developer tools discovery site focused on discoverability and quick access. Clean, responsive React UI with a FastAPI backend deployed on Koyeb for efficient hosting and scaling.",
         technologies: ["React", "FastAPI", "Vercel", "Koyeb"],
         liveUrl: "https://www.devtoolss.sbs/",
     },
     {
         title: "PDFWorkshop — PDF Tools Suite",
         image: imageAssetsVar.pdfapi,
-        description: "A web-based PDF utilities suite for everyday document workflows. Decoupled React frontend and FastAPI backend enabling modular feature delivery and independent scaling. Live: https://www.pdfworkshop.sbs/",
+        description: "A web-based PDF utilities suite for everyday document workflows. Decoupled React frontend and FastAPI backend enabling modular feature delivery and independent scaling.",
         technologies: ["React", "FastAPI", "Vercel", "AWS EC2", "GCP"],
         liveUrl: "https://www.pdfworkshop.sbs/",
     },
     {
         title: "MP3Juices — Audio Download Web App",
         image: imageAssetsVar.mpyjuiceui,
-        description: "A lightweight web app for converting and downloading YouTube audio with a simple, user-focused interface. Separate API layer keeps the frontend fast and the backend scalable. Live: https://www.mp3juices.sbs/",
+        description: "A lightweight web app for converting and downloading YouTube audio with a simple, user-focused interface. Separate API layer keeps the frontend fast and the backend scalable.",
         technologies: ["React", "FastAPI", "Vercel", "AWS EC2", "GCP", "FFmpeg", "yt-dlp"],
         liveUrl: "https://www.mp3juices.sbs/",
     },
     {
         title: "Browser-Based Code Editor",
         image: imageAssetsVar.pydfui,
-        description: "A Next.js in-browser editor experience with a Dockerized backend hosted on Render. Focused on performance, reliability, and a smooth in-browser workflow. Live: https://editor-tau-sand.vercel.app/",
+        description: "A Next.js in-browser editor experience with a Dockerized backend hosted on Render. Focused on performance, reliability, and a smooth in-browser workflow.",
         technologies: ["Next.js", "Docker", "Render", "Vercel"],
         liveUrl: "https://editor-tau-sand.vercel.app/",
     },
     {
         title: "Portfolio Website",
         image: imageAssetsVar.abtme,
-        description: "Personal portfolio built with React and deployed on Vercel showcasing projects, experience, and skills. Live: https://meetdan.vercel.app/",
+        description: "Personal portfolio built with React and deployed on Vercel showcasing projects, experience, and skills.",
         technologies: ["React", "Vercel", "Tailwind CSS", "TypeScript"],
         liveUrl: "https://meetdan.vercel.app/",
     },
-
-    // ── PDF Management System ──────────────────────────────────────────────
     {
         title: "PDF Management System — Full Stack",
         image: imageAssetsVar.pydfui,
@@ -88,8 +86,6 @@ export const Projects = [
         technologies: ["React", "FastAPI", "Vercel", "PDF.js", "Python"],
         liveUrl: "https://pydfui.vercel.app/",
     },
-
-    // ── MP3 Platform ───────────────────────────────────────────────────────
     {
         title: "MP3 Audio Downloader Platform — Full Stack",
         image: imageAssetsVar.mpyjuiceui,
@@ -97,39 +93,103 @@ export const Projects = [
         technologies: ["React", "FastAPI", "AWS EC2", "Docker", "FFmpeg", "yt-dlp", "YouTube Data API"],
         liveUrl: "https://mpyjuice-ui.vercel.app/",
     },
+    {
+        title: "Paradigm Sequencer (Contributor)",
+        image: imageAssetsVar.gap,
+        description: "Contributed to building the Paradigm Sequencer platform, assisting with implementation work and feature delivery.",
+        technologies: ["Web Application Development"],
+        liveUrl: "https://paradigmoutreach.com/",
+    },
+    {
+        title: "Artemis Delta — Website Maintenance",
+        image: imageAssetsVar.gap,
+        description: "Provided ongoing maintenance and improvements for a live production website, focusing on reliability, bug fixes, and incremental enhancements.",
+        technologies: ["Web Maintenance", "Bug Fixes"],
+        liveUrl: "https://artemisdelta.com/",
+    },
 
-    // ── E-commerce ─────────────────────────────────────────────────────────
+    // ── GitHub Projects ────────────────────────────────────────────────────
     {
         title: "Django E-commerce Shop",
         image: imageAssetsVar.djangoecom2,
-        description: "Full-featured online shopping platform with secure PayPal payment integration, real-time inventory management via Firebase, comprehensive order management, and PostgreSQL for robust data handling. GitHub: https://github.com/DanGatobu/Fitshop",
+        description: "Full-featured online shopping platform with secure PayPal payment integration, real-time inventory management via Firebase, comprehensive order management, and PostgreSQL for robust data handling.",
         technologies: ["Django", "Firebase", "PostgreSQL", "PayPal", "Python"],
         githubUrl: "https://github.com/DanGatobu/Fitshop",
     },
     {
         title: "React E-commerce Shop",
         image: imageAssetsVar.reactshp,
-        description: "Modern e-commerce solution with sleek responsive design, shopping cart, product catalog, and secure Stripe checkout. MongoDB for flexible data storage. GitHub: https://github.com/DanGatobu/fitshopui",
+        description: "Modern e-commerce solution with sleek responsive design, shopping cart, product catalog, and secure Stripe checkout. MongoDB for flexible data storage.",
         technologies: ["React", "Node.js", "MongoDB", "Stripe"],
         githubUrl: "https://github.com/DanGatobu/fitshopui",
     },
-
-    // ── API Integration ────────────────────────────────────────────────────
     {
         title: "Telephony System Integration — Yemot & Donary APIs",
         image: imageAssetsVar.yemapi,
-        description: "Enterprise-grade FastAPI integration connecting the Yemot telephony system with the Donary platform. Real-time data processing and routing, seamless communication between telephony and business systems, high-performance data exchange architecture. GitHub: https://github.com/DanGatobu/DnApi",
+        description: "Enterprise-grade FastAPI integration connecting the Yemot telephony system with the Donary platform. Real-time data processing and routing, seamless communication between telephony and business systems, high-performance data exchange architecture.",
         technologies: ["FastAPI", "Python", "Yemot API", "Donary API"],
         githubUrl: "https://github.com/DanGatobu/DnApi",
     },
+    {
+        title: "AI-Powered Trading Bot",
+        image: imageAssetsVar.fxb,
+        description: "Sophisticated algorithmic trading system using TensorFlow for ML market analysis, real-time trade execution via MetaTrader API, PyQt6 GUI for monitoring and configuration, MongoDB for trade history and performance analytics.",
+        technologies: ["Python", "TensorFlow", "PyQt6", "MetaTrader API", "MongoDB", "APScheduler"],
+        githubUrl: "https://github.com/DanGatobu/Forth-project",
+    },
+    {
+        title: "Automated Instagram Account Grower",
+        image: imageAssetsVar.instagrower,
+        description: "Instagram growth automation platform with multi-account management, automated following/unfollowing strategies, image posting with scheduling, and PostgreSQL analytics for growth metrics. Uses Selenium to interact with Instagram to avoid detection.",
+        technologies: ["Qt", "Selenium", "PostgreSQL", "Python"],
+        githubUrl: "https://github.com/DanGatobu/instabot",
+    },
+    {
+        title: "Automated Excel Report Generator & Email Sender",
+        image: imageAssetsVar.gap,
+        description: "Automated business reporting solution. API data fetching, Excel report generation, and daily automated email distribution. Also has a Google Apps Script version for always-online operation.",
+        technologies: ["Python", "Selenium", "Google Apps Script"],
+        githubUrl: "https://github.com/DanGatobu/donaryselenum",
+    },
+    {
+        title: "Django Job Application Assistant",
+        image: imageAssetsVar.jbap,
+        description: "Productivity tool that simplifies the job application process with template customization, automated submission, and scheduling reminders for follow-ups. PostgreSQL for application tracking.",
+        technologies: ["Django", "PostgreSQL", "Python"],
+        githubUrl: "https://github.com/DanGatobu/job-application-manager",
+    },
+
+    // ── Automation Projects ────────────────────────────────────────────────
     {
         title: "Intelligent Support Ticketing System",
         image: imageAssetsVar.gap,
         description: "Comprehensive real-time customer support platform integrating user communication with internal team workflows. Features WebSocket-powered real-time messaging, automated ticket creation, and direct Slack integration for support team collaboration. Firebase handles user authentication and data persistence for reliable ticket tracking and resolution management.",
         technologies: ["Next.js", "FastAPI", "WebSockets", "Slack API", "Firebase", "Flask"],
     },
-
-    // ── N8N Automation ─────────────────────────────────────────────────────
+    {
+        title: "Mini Real-Time Ticketing System",
+        image: imageAssetsVar.gap,
+        description: "Lightweight real-time ticketing system with a FastAPI WebSocket backend hosted on Render, Next.js frontend, and Firebase for authentication and persistence. Enables fast ticket creation and live updates for support operations.",
+        technologies: ["FastAPI", "WebSockets", "Next.js", "Firebase", "Render"],
+    },
+    {
+        title: "Project Management Dashboard",
+        image: imageAssetsVar.gap,
+        description: "Centralized project management platform providing comprehensive oversight of development projects. Features project creation, status tracking, resource allocation, and progress monitoring. Supabase powers real-time data synchronization with a fully responsive design for cross-device accessibility.",
+        technologies: ["Next.js", "FastAPI", "Supabase"],
+    },
+    {
+        title: "Next.js + FastAPI Production App Maintenance (AWS EC2)",
+        image: imageAssetsVar.gap,
+        description: "Owned ongoing maintenance for a production Next.js application backed by a FastAPI API hosted on AWS EC2 Linux. Delivered stability improvements, bug fixes, dependency upgrades, and deployment support while maintaining high uptime and performance.",
+        technologies: ["Next.js", "FastAPI", "AWS EC2", "Linux"],
+    },
+    {
+        title: "AI-Powered Website Analysis Chatbot",
+        image: imageAssetsVar.gap,
+        description: "Intelligent chatbot agent that analyzes websites and provides actionable insights. Leverages LangChain's NLP capabilities to crawl, analyze, and summarize website content, offering detailed reports on site structure, content quality, and optimization opportunities.",
+        technologies: ["LangChain", "FastAPI", "Python", "Natural Language Processing"],
+    },
     {
         title: "Project Management Automation — N8N",
         image: imageAssetsVar.gap,
@@ -154,87 +214,11 @@ export const Projects = [
         description: "Automated system that collects and analyzes Slack conversations to generate comprehensive FAQs and knowledge base articles. The N8N workflow processes communication patterns, identifies frequently asked questions, and creates structured documentation, significantly reducing repetitive support queries.",
         technologies: ["N8N", "Slack API", "Natural Language Processing"],
     },
-
-    // ── AI / ML ────────────────────────────────────────────────────────────
-    {
-        title: "AI-Powered Trading Bot",
-        image: imageAssetsVar.fxb,
-        description: "Sophisticated algorithmic trading system using TensorFlow for ML market analysis, real-time trade execution via MetaTrader API, PyQt6 GUI for monitoring and configuration, MongoDB for trade history and performance analytics. GitHub: https://github.com/DanGatobu/Forth-project",
-        technologies: ["Python", "TensorFlow", "PyQt6", "MetaTrader API", "MongoDB", "APScheduler"],
-        githubUrl: "https://github.com/DanGatobu/Forth-project",
-    },
-
-    // ── Automation & Scraping ──────────────────────────────────────────────
-    {
-        title: "Automated Instagram Account Grower",
-        image: imageAssetsVar.instagrower,
-        description: "Instagram growth automation platform with multi-account management, automated following/unfollowing strategies, image posting with scheduling, and PostgreSQL analytics for growth metrics. Uses Selenium to interact with Instagram to avoid detection. GitHub: https://github.com/DanGatobu/instabot",
-        technologies: ["Qt", "Selenium", "PostgreSQL", "Python"],
-        githubUrl: "https://github.com/DanGatobu/instabot",
-    },
-    {
-        title: "Automated Excel Report Generator & Email Sender",
-        image: imageAssetsVar.gap,
-        description: "Automated business reporting solution. API data fetching, Excel report generation, and daily automated email distribution. Also has a Google Apps Script version for always-online operation. GitHub: https://github.com/DanGatobu/donaryselenum & https://github.com/DanGatobu/donary-scrap",
-        technologies: ["Python", "Selenium", "Google Apps Script"],
-        githubUrl: "https://github.com/DanGatobu/donaryselenum",
-    },
-    {
-        title: "Comprehensive Web Scraping Suite",
-        image: imageAssetsVar.gap,
-        description: "Large-scale data collection infrastructure. PitchBook: scraped and processed 150,000+ investment and company records. RocketReach: collected and structured 50,000+ contact records in Supabase. Apollo & LinkedIn: built scalable scraping solutions for lead generation and market research. Also covers e-commerce (Zillow, Amazon, Walmart, eBay, Etsy, AliExpress), social media (Facebook, Instagram, TikTok), and travel/review platforms (TripAdvisor, Booking.com, Yelp). 200,000+ records processed total.",
-        technologies: ["Python", "Web Scraping", "Supabase", "Apollo API", "LinkedIn API"],
-    },
-
-    // ── Content / Media ────────────────────────────────────────────────────
-    {
-        title: "YouTube Shorts Generator",
-        image: imageAssetsVar.ytdownloader,
-        description: "Automated content creation pipeline for YouTube Shorts. Text-to-video short generation, automated YouTube upload and publishing, video processing with FFmpeg. Example outputs: https://youtube.com/shorts/short1 | https://youtube.com/shorts/short2",
-        technologies: ["Python", "FFmpeg", "YouTube API", "Video Processing"],
-    },
-
-    // ── Marketing ──────────────────────────────────────────────────────────
-    {
-        title: "Email Marketing Platform Integrations",
-        image: imageAssetsVar.gap,
-        description: "Integrated multiple email marketing platforms including SmartLead, MailLead, and Instantly via API connections. Automated campaign management and analytics, cross-platform data synchronization.",
-        technologies: ["APIs", "Automation Workflows"],
-    },
-
-    // ── Productivity ───────────────────────────────────────────────────────
-    {
-        title: "Django Job Application Assistant",
-        image: imageAssetsVar.jbap,
-        description: "Productivity tool that simplifies the job application process with template customization, automated submission, and scheduling reminders for follow-ups. PostgreSQL for application tracking. GitHub: https://github.com/DanGatobu/job-application-manager",
-        technologies: ["Django", "PostgreSQL", "Python"],
-        githubUrl: "https://github.com/DanGatobu/job-application-manager",
-    },
-
-    // ── New Projects ───────────────────────────────────────────────────────
-    {
-        title: "Project Management Dashboard",
-        image: imageAssetsVar.gap,
-        description: "Centralized project management platform providing comprehensive oversight of development projects. Features project creation, status tracking, resource allocation, and progress monitoring. Supabase powers real-time data synchronization with a fully responsive design for cross-device accessibility.",
-        technologies: ["Next.js", "FastAPI", "Supabase"],
-    },
-    {
-        title: "AI-Powered Website Analysis Chatbot",
-        image: imageAssetsVar.gap,
-        description: "Intelligent chatbot agent that analyzes websites and provides actionable insights. Leverages LangChain's NLP capabilities to crawl, analyze, and summarize website content, offering detailed reports on site structure, content quality, and optimization opportunities.",
-        technologies: ["LangChain", "FastAPI", "Python", "Natural Language Processing"],
-    },
     {
         title: "CRM Integration & Automation Suite",
         image: imageAssetsVar.gap,
         description: "Comprehensive business process automation suite built with N8N. Attio-Bison integration for automated CRM and business intelligence data sync. Calendly-Attio connection for automatic CRM record creation from calendar bookings. Candidate shortlisting automation that screens job applications based on predefined criteria.",
         technologies: ["N8N", "Attio CRM", "Calendly", "Bison Automation"],
-    },
-    {
-        title: "Next.js + FastAPI Production App Maintenance (AWS EC2)",
-        image: imageAssetsVar.gap,
-        description: "Owned ongoing maintenance for a production Next.js application backed by a FastAPI API hosted on AWS EC2 Linux. Delivered stability improvements, bug fixes, dependency upgrades, and deployment support while maintaining high uptime and performance.",
-        technologies: ["Next.js", "FastAPI", "AWS EC2", "Linux"],
     },
     {
         title: "Zapier + Fireflies AI Automation Pipeline",
@@ -249,30 +233,28 @@ export const Projects = [
         technologies: ["GoHighLevel", "CRM Automation", "Workflow Design"],
     },
     {
-        title: "Paradigm Sequencer (Contributor)",
-        image: imageAssetsVar.gap,
-        description: "Contributed to building the Paradigm Sequencer platform, assisting with implementation work and feature delivery. Live: https://paradigmoutreach.com/",
-        technologies: ["Web Application Development"],
-        liveUrl: "https://paradigmoutreach.com/",
-    },
-    {
         title: "Airtable + Monday.com Automation",
         image: imageAssetsVar.gap,
         description: "Implemented automation workflows using Airtable native automations and N8N to connect systems, reduce repetitive ops work, and keep data in sync across teams.",
         technologies: ["Airtable", "Monday.com", "N8N", "Automation"],
     },
     {
-        title: "Mini Real-Time Ticketing System",
+        title: "Email Marketing Platform Integrations",
         image: imageAssetsVar.gap,
-        description: "Lightweight real-time ticketing system with a FastAPI WebSocket backend hosted on Render, Next.js frontend, and Firebase for authentication and persistence. Enables fast ticket creation and live updates for support operations.",
-        technologies: ["FastAPI", "WebSockets", "Next.js", "Firebase", "Render"],
+        description: "Integrated multiple email marketing platforms including SmartLead, MailLead, and Instantly via API connections. Automated campaign management and analytics, cross-platform data synchronization.",
+        technologies: ["APIs", "Automation Workflows"],
     },
     {
-        title: "Artemis Delta — Website Maintenance",
+        title: "Comprehensive Web Scraping Suite",
         image: imageAssetsVar.gap,
-        description: "Provided ongoing maintenance and improvements for a live production website, focusing on reliability, bug fixes, and incremental enhancements. Live: https://artemisdelta.com/",
-        technologies: ["Web Maintenance", "Bug Fixes"],
-        liveUrl: "https://artemisdelta.com/",
+        description: "Large-scale data collection infrastructure. PitchBook: scraped and processed 150,000+ investment and company records. RocketReach: collected and structured 50,000+ contact records in Supabase. Apollo & LinkedIn: built scalable scraping solutions for lead generation and market research. Also covers e-commerce (Zillow, Amazon, Walmart, eBay, Etsy, AliExpress), social media (Facebook, Instagram, TikTok), and travel/review platforms (TripAdvisor, Booking.com, Yelp). 200,000+ records processed total.",
+        technologies: ["Python", "Web Scraping", "Supabase", "Apollo API", "LinkedIn API"],
+    },
+    {
+        title: "YouTube Shorts Generator",
+        image: imageAssetsVar.ytdownloader,
+        description: "Automated content creation pipeline for YouTube Shorts. Text-to-video short generation, automated YouTube upload and publishing, video processing with FFmpeg.",
+        technologies: ["Python", "FFmpeg", "YouTube API", "Video Processing"],
     },
 ];
 
