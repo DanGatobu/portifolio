@@ -29,8 +29,8 @@ export const TechSummary = {
     frameworks: ["React", "Next.js", "Django", "FastAPI", "Flask"],
     databases: ["PostgreSQL", "MongoDB", "Firebase", "Supabase"],
     cloudDevOps: ["AWS EC2", "AWS ECS", "AWS Lambda", "Vercel", "Docker", "GCP", "Koyeb", "Render"],
-    apis: ["Slack", "Linear", "YouTube", "Stripe", "PayPal", "Calendly", "MetaTrader"],
-    automation: ["N8N", "Selenium", "Web Scraping"],
+    apis: ["Slack", "Linear", "YouTube", "Stripe", "PayPal", "Calendly", "MetaTrader", "Apollo", "LinkedIn", "Attio", "Fireflies AI"],
+    automation: ["N8N", "Zapier", "GoHighLevel", "Airtable", "Monday.com", "Selenium", "Web Scraping"],
     aiMl: ["TensorFlow", "LangChain", "Natural Language Processing"],
     mediaProcessing: ["FFmpeg", "PDF.js", "yt-dlp"],
 };
@@ -125,21 +125,21 @@ export const Projects = [
     {
         title: "Intelligent Support Ticketing System",
         image: imageAssetsVar.gap,
-        description: "Real-time customer support platform with live Slack integration for support teams, WebSocket-powered real-time communication, automated ticket creation and management, and seamless UI-to-Slack workflow for efficient support operations.",
-        technologies: ["FastAPI", "Next.js", "Slack API", "WebSockets"],
+        description: "Comprehensive real-time customer support platform integrating user communication with internal team workflows. Features WebSocket-powered real-time messaging, automated ticket creation, and direct Slack integration for support team collaboration. Firebase handles user authentication and data persistence for reliable ticket tracking and resolution management.",
+        technologies: ["Next.js", "FastAPI", "WebSockets", "Slack API", "Firebase", "Flask"],
     },
 
     // ── N8N Automation ─────────────────────────────────────────────────────
     {
         title: "Project Management Automation — N8N",
         image: imageAssetsVar.gap,
-        description: "Streamlined project workflow system using N8N. Automated project posting to Slack channels, direct task assignment through Slack interactions, Linear-Slack integration for seamless project tracking.",
+        description: "Engineered an automated workflow system integrating Linear project tracking with Slack. New projects are automatically posted to designated Slack channels, enabling team members to claim assignments directly through Slack interactions, reducing project allocation time and improving team coordination.",
         technologies: ["N8N", "Slack API", "Linear API"],
     },
     {
         title: "Intelligent Email Response System — N8N",
         image: imageAssetsVar.gap,
-        description: "Automated email management with human oversight. AI-generated email responses, Slack-based approval and editing workflow, automated sending after confirmation.",
+        description: "Automated email management system that generates contextual AI responses, routes them through Slack for team approval and modification, then sends finalized responses. Reduces response time while maintaining quality control through human oversight.",
         technologies: ["N8N", "Email APIs", "Slack API"],
     },
     {
@@ -151,7 +151,7 @@ export const Projects = [
     {
         title: "FAQ Generation System — N8N",
         image: imageAssetsVar.gap,
-        description: "Knowledge base automation via N8N. Slack message analysis and processing, automated FAQ and Q&A generation, continuous knowledge base updates from team communications.",
+        description: "Automated system that collects and analyzes Slack conversations to generate comprehensive FAQs and knowledge base articles. The N8N workflow processes communication patterns, identifies frequently asked questions, and creates structured documentation, significantly reducing repetitive support queries.",
         technologies: ["N8N", "Slack API", "Natural Language Processing"],
     },
 
@@ -182,8 +182,8 @@ export const Projects = [
     {
         title: "Comprehensive Web Scraping Suite",
         image: imageAssetsVar.gap,
-        description: "Large-scale data collection infrastructure built for an upcoming Next.js + FastAPI + Supabase project. Covers e-commerce (Zillow, Amazon, Walmart, eBay, Etsy, AliExpress), social media (Facebook, Instagram, TikTok), business intelligence (Apollo, PitchBook, Crunchbase, ZoomInfo, LinkedIn), and travel/review platforms (TripAdvisor, Booking.com, Yelp). Over 200,000+ records processed across platforms.",
-        technologies: ["Python", "Web Scraping", "APIs", "Supabase"],
+        description: "Large-scale data collection infrastructure. PitchBook: scraped and processed 150,000+ investment and company records. RocketReach: collected and structured 50,000+ contact records in Supabase. Apollo & LinkedIn: built scalable scraping solutions for lead generation and market research. Also covers e-commerce (Zillow, Amazon, Walmart, eBay, Etsy, AliExpress), social media (Facebook, Instagram, TikTok), and travel/review platforms (TripAdvisor, Booking.com, Yelp). 200,000+ records processed total.",
+        technologies: ["Python", "Web Scraping", "Supabase", "Apollo API", "LinkedIn API"],
     },
 
     // ── Content / Media ────────────────────────────────────────────────────
@@ -209,6 +209,70 @@ export const Projects = [
         description: "Productivity tool that simplifies the job application process with template customization, automated submission, and scheduling reminders for follow-ups. PostgreSQL for application tracking. GitHub: https://github.com/DanGatobu/job-application-manager",
         technologies: ["Django", "PostgreSQL", "Python"],
         githubUrl: "https://github.com/DanGatobu/job-application-manager",
+    },
+
+    // ── New Projects ───────────────────────────────────────────────────────
+    {
+        title: "Project Management Dashboard",
+        image: imageAssetsVar.gap,
+        description: "Centralized project management platform providing comprehensive oversight of development projects. Features project creation, status tracking, resource allocation, and progress monitoring. Supabase powers real-time data synchronization with a fully responsive design for cross-device accessibility.",
+        technologies: ["Next.js", "FastAPI", "Supabase"],
+    },
+    {
+        title: "AI-Powered Website Analysis Chatbot",
+        image: imageAssetsVar.gap,
+        description: "Intelligent chatbot agent that analyzes websites and provides actionable insights. Leverages LangChain's NLP capabilities to crawl, analyze, and summarize website content, offering detailed reports on site structure, content quality, and optimization opportunities.",
+        technologies: ["LangChain", "FastAPI", "Python", "Natural Language Processing"],
+    },
+    {
+        title: "CRM Integration & Automation Suite",
+        image: imageAssetsVar.gap,
+        description: "Comprehensive business process automation suite built with N8N. Attio-Bison integration for automated CRM and business intelligence data sync. Calendly-Attio connection for automatic CRM record creation from calendar bookings. Candidate shortlisting automation that screens job applications based on predefined criteria.",
+        technologies: ["N8N", "Attio CRM", "Calendly", "Bison Automation"],
+    },
+    {
+        title: "Next.js + FastAPI Production App Maintenance (AWS EC2)",
+        image: imageAssetsVar.gap,
+        description: "Owned ongoing maintenance for a production Next.js application backed by a FastAPI API hosted on AWS EC2 Linux. Delivered stability improvements, bug fixes, dependency upgrades, and deployment support while maintaining high uptime and performance.",
+        technologies: ["Next.js", "FastAPI", "AWS EC2", "Linux"],
+    },
+    {
+        title: "Zapier + Fireflies AI Automation Pipeline",
+        image: imageAssetsVar.gap,
+        description: "Automation pipeline that pulls meeting transcripts from Fireflies AI, applies a quality scoring and rating step, and saves a clean summary plus rating into documents for different stakeholders. Reduced manual copy-paste work and improved consistency of meeting documentation.",
+        technologies: ["Zapier", "Fireflies AI", "Google Docs", "Automation"],
+    },
+    {
+        title: "GoHighLevel Workflow & Pipeline Automation",
+        image: imageAssetsVar.gap,
+        description: "Designed and implemented multiple GHL workflows to automate course operations and reduce manual updates across the learner lifecycle. Automated pipeline transitions and updates for key milestones such as course start and course completion.",
+        technologies: ["GoHighLevel", "CRM Automation", "Workflow Design"],
+    },
+    {
+        title: "Paradigm Sequencer (Contributor)",
+        image: imageAssetsVar.gap,
+        description: "Contributed to building the Paradigm Sequencer platform, assisting with implementation work and feature delivery. Live: https://paradigmoutreach.com/",
+        technologies: ["Web Application Development"],
+        liveUrl: "https://paradigmoutreach.com/",
+    },
+    {
+        title: "Airtable + Monday.com Automation",
+        image: imageAssetsVar.gap,
+        description: "Implemented automation workflows using Airtable native automations and N8N to connect systems, reduce repetitive ops work, and keep data in sync across teams.",
+        technologies: ["Airtable", "Monday.com", "N8N", "Automation"],
+    },
+    {
+        title: "Mini Real-Time Ticketing System",
+        image: imageAssetsVar.gap,
+        description: "Lightweight real-time ticketing system with a FastAPI WebSocket backend hosted on Render, Next.js frontend, and Firebase for authentication and persistence. Enables fast ticket creation and live updates for support operations.",
+        technologies: ["FastAPI", "WebSockets", "Next.js", "Firebase", "Render"],
+    },
+    {
+        title: "Artemis Delta — Website Maintenance",
+        image: imageAssetsVar.gap,
+        description: "Provided ongoing maintenance and improvements for a live production website, focusing on reliability, bug fixes, and incremental enhancements. Live: https://artemisdelta.com/",
+        technologies: ["Web Maintenance", "Bug Fixes"],
+        liveUrl: "https://artemisdelta.com/",
     },
 ];
 
