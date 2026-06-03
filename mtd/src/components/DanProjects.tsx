@@ -2,10 +2,12 @@
 import { Projects } from '../assets/DanInfo'
 import { motion } from 'framer-motion'
 
-// projects with liveUrl, projects with only githubUrl, rest (automations)
-const liveProjects   = Projects.filter((p) => 'liveUrl' in p && p.liveUrl);
-const githubProjects = Projects.filter((p) => !('liveUrl' in p && p.liveUrl) && 'githubUrl' in p && p.githubUrl);
-const autoProjects   = Projects.filter((p) => !('liveUrl' in p && p.liveUrl) && !('githubUrl' in p && p.githubUrl));
+// professional work first, then live, then github-only, then the rest (automations)
+const isWork = (p: typeof Projects[0]) => 'section' in p && p.section === 'work';
+const workProjects   = Projects.filter(isWork);
+const liveProjects   = Projects.filter((p) => !isWork(p) && 'liveUrl' in p && p.liveUrl);
+const githubProjects = Projects.filter((p) => !isWork(p) && !('liveUrl' in p && p.liveUrl) && 'githubUrl' in p && p.githubUrl);
+const autoProjects   = Projects.filter((p) => !isWork(p) && !('liveUrl' in p && p.liveUrl) && !('githubUrl' in p && p.githubUrl));
 
 const fadeUp = { whileInView: { opacity: 1, y: 0 }, initial: { opacity: 0, y: -40 }, transition: { duration: 0.5 } };
 
@@ -50,6 +52,13 @@ const DanProjects = () => {
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h1 {...fadeUp} className="my-20 text-center text-4xl">Projects</motion.h1>
+
+      <SectionHeader label="🏢 Professional Work" />
+      <motion.p {...fadeUp} className="mb-8 max-w-2xl text-sm text-neutral-400 leading-relaxed">
+        Production systems I build and operate as a full-stack & reliability engineer — enterprise SaaS, multi-tenant
+        infrastructure, and outreach automation. Details kept high-level out of respect for client confidentiality.
+      </motion.p>
+      {workProjects.map((project, i) => <ProjectCard key={i} project={project} index={i} />)}
 
       <SectionHeader label="🚀 Live Projects" />
       {liveProjects.map((project, i) => <ProjectCard key={i} project={project} index={i} />)}

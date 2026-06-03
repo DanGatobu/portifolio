@@ -28,8 +28,8 @@ const container=(delay:number)=>({
                         animate="visible"
                         variants={container(0.5)}
                        className="bg-gradient-to-r from bg-pink-300 via-slate-500 to-purple-400 bg-clip-text text-3xl tracking-tight text-transparent">
-                          SOFTWARE DEVELOPER
-  
+                          SOFTWARE ENGINEER · BACKEND & AI SYSTEMS
+
                       </motion.span>
                       <motion.p 
                         initial="hidden"

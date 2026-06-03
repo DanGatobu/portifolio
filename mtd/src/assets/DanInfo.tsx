@@ -2,41 +2,93 @@ import imageAssetsVar from "./images/imageAssets";
 
 export const Experience = [
     {
-        year: "2024 - Present",
-        role: "Software Developer",
-        company: "Fiverr Freelance.",
-        description: `Designed an automated solution to retrieve data via API, generate Excel reports, 
-        and distribute them to multiple recipients daily. Implemented a Google Apps Script version for 
-        seamless, always-online operation. Developed a Selenium-based alternative for website scraping, in case of recaptcha updates.`,
-        technologies: ["Python", "Google Apps Script", "Selenium", "Requests"],
+        year: "Dec 2024 - Present",
+        role: "Full-Stack & Automation Engineer",
+        company: "DevCore (Remote)",
+        description: `Ship features and reliability engineering across a large production enterprise SaaS platform
+        (Next.js + FastAPI + PostgreSQL/pgvector on AWS, with Redis task processing, document-processing pipelines,
+        and AI-assisted features). Operate and automate a multi-tenant email-infrastructure platform integrating
+        Microsoft 365 with Azure across 130+ tenants — provisioning, DNS, deliverability, and incident response.
+        Build AI-powered automations (LangChain agents, human-in-the-loop Slack approval) and cross-platform
+        workflow integrations (n8n, GoHighLevel, Zapier), plus large-scale data engineering (200,000+ records).`,
+        technologies: ["Next.js", "FastAPI", "PostgreSQL", "pgvector", "Redis", "AWS", "Azure", "LangChain", "n8n"],
     },
     {
-        year: "2023 - 2023",
-        role: "Software Developer",
-        company: "Upwork Freelance.",
-        description: `Assisted in developing LinkedIn automation tools by setting up Django endpoints 
-    for seamless data processing and integration.`,
-        technologies: ["Python", "Django", "LinkedIn API"],
+        year: "2023 - Present",
+        role: "Freelance Software Engineer",
+        company: "Independent (Remote)",
+        description: `Design, build, deploy, and operate production products end-to-end. Flagship: LogPose — a
+        multi-platform web-scraping API / SaaS running on self-managed VPS infrastructure (nginx + Cloudflare) with
+        an async job queue, managed proxy pool, API-key auth, and credit-based billing. Also a suite of free web
+        tools serving real users, plus client integrations and automation systems.`,
+        technologies: ["Python", "FastAPI", "React", "Docker", "nginx", "Cloudflare", "PostgreSQL", "Paystack"],
+    },
+    {
+        year: "2022 - 2023",
+        role: "Earlier Experience",
+        company: "Industrial Attachment & Data Operations",
+        description: `Microsoft Dynamics 365 Business Central setup and data operations (APPKINGS Solutions),
+        and elections data handling and team coordination (IEBC).`,
+        technologies: ["Microsoft Dynamics 365", "Data Operations"],
     },
 ];
 
-export const HeroContent = 'I am an innovator who loves creating practical solutions to everyday challenges. My passion lies in turning ideas into systems that work seamlessly and provide value to users. I enjoy exploring different approaches, learning from each experience, and delivering results that make a difference. Collaboration, growth, and impact are what drive me forward.';
+export const HeroContent = 'Full-stack software engineer specialized in Python (FastAPI) and TypeScript (React / Next.js). I design, build, deploy, and operate production systems end-to-end — backend APIs, multi-tenant SaaS, AI-powered features, and automation pipelines — on AWS, Azure, and self-managed infrastructure. I own systems through their full lifecycle and keep them running at scale.';
 
-export const AboutContent = 'I am a passionate problem-solver who thrives on creating practical, impactful solutions. I enjoy turning ideas into seamless systems that simplify tasks and deliver real value to users. With a mindset focused on innovation and growth, I embrace every project as a chance to learn, collaborate, and make a difference. I\'m driven by the desire to build tools that empower others, streamline workflows, and leave a meaningful impact.';
+export const AboutContent = 'I am a full-stack engineer with 4+ years building production web applications and ~2 years delivering full-stack products, backend APIs, and automation systems professionally. I work across the whole stack — FastAPI and Next.js front to back — with hands-on experience in PostgreSQL/pgvector, Redis/Celery pipelines, Docker, and AI features built on OpenAI, Anthropic, and LangChain. I have a proven record of owning systems through their full lifecycle (design → build → deploy → maintain) in multi-tenant, high-uptime environments, and I care as much about reliability and clean operations as I do about shipping new features.';
 
 export const TechSummary = {
-    languages: ["Python", "JavaScript", "TypeScript"],
-    frameworks: ["React", "Next.js", "Django", "FastAPI", "Flask"],
-    databases: ["PostgreSQL", "MongoDB", "Firebase", "Supabase"],
-    cloudDevOps: ["AWS EC2", "AWS ECS", "AWS Lambda", "Vercel", "Docker", "GCP", "Koyeb", "Render"],
-    apis: ["Slack", "Linear", "YouTube", "Stripe", "PayPal", "Calendly", "MetaTrader", "Apollo", "LinkedIn", "Attio", "Fireflies AI"],
-    automation: ["N8N", "Zapier", "GoHighLevel", "Airtable", "Monday.com", "Selenium", "Web Scraping"],
-    aiMl: ["TensorFlow", "LangChain", "Natural Language Processing"],
+    languages: ["Python", "TypeScript", "JavaScript", "C#", "SQL", "Dart"],
+    frameworks: ["FastAPI", "Next.js", "React", "Flask", "Django", "SQLAlchemy", "Alembic", "Celery", "WebSockets"],
+    databases: ["PostgreSQL", "pgvector", "Redis", "MongoDB", "Supabase", "Firebase", "Qdrant"],
+    cloudDevOps: ["AWS (EC2, S3)", "Azure (Functions, Identity, Key Vault, DNS)", "Self-managed VPS (Contabo, Hetzner)", "Docker", "nginx", "Cloudflare", "Vercel", "GCP", "Koyeb", "CI/CD"],
+    apis: ["Slack", "Linear", "Attio", "Calendly", "Apollo", "LinkedIn", "Microsoft Graph", "Stripe", "Paystack", "Fireflies AI"],
+    automation: ["n8n", "GoHighLevel", "Zapier", "Make", "Airtable", "Monday.com", "Selenium", "Large-scale Web Scraping & ETL"],
+    aiMl: ["OpenAI", "Anthropic", "LangChain", "Vector Search / RAG", "Intelligent Agents", "TensorFlow", "NLP"],
     mediaProcessing: ["FFmpeg", "PDF.js", "yt-dlp"],
 };
 
 export const Projects = [
+    // ── Professional Work ──────────────────────────────────────────────────
+    {
+        title: "Enterprise SaaS Platform — Feature & Reliability Engineering",
+        image: imageAssetsVar.gap,
+        description: "Contributed feature development and reliability engineering to a large production enterprise SaaS platform — Next.js + FastAPI + PostgreSQL/pgvector on AWS, with Redis task processing, document-processing pipelines, and AI-assisted features spanning web, mobile, and desktop. Shipped backend features, resolved production issues, and kept services running at high uptime.",
+        technologies: ["Next.js", "FastAPI", "PostgreSQL", "pgvector", "Redis", "AWS", "AI / LLM"],
+        section: "work",
+    },
+    {
+        title: "Team Productivity & AI Support Platform — Contributor",
+        image: imageAssetsVar.gap,
+        description: "Helped build parts of a multi-tenant productivity platform (task management, scheduling, documents) with an AI-powered support layer. Next.js + FastAPI on Supabase/PostgreSQL with Redis/Celery background processing and a RAG support assistant backed by a vector database.",
+        technologies: ["Next.js", "FastAPI", "Supabase", "Redis", "Celery", "Qdrant", "RAG"],
+        section: "work",
+    },
+    {
+        title: "Artemis Delta — Email Infrastructure Platform",
+        image: imageAssetsVar.gap,
+        description: "Maintain and enhance a multi-tenant email-infrastructure platform integrating Microsoft 365 with Azure and Google Cloud. Operate and automate administration across 130+ tenants — provisioning, permissions, and DNS — resolve production incidents, and improve deliverability and reliability.",
+        technologies: ["Microsoft Graph", "Azure", "GCP", "Next.js", "Python", "Firebase"],
+        liveUrl: "https://artemisdelta.com/",
+        section: "work",
+    },
+    {
+        title: "Paradigm — Outreach Automation Platform (Contributor)",
+        image: imageAssetsVar.gap,
+        description: "Contributed features and integrations to an email-sequencing / outreach-automation platform built on FastAPI + Supabase with AI classification, vector search, and durable background workers for sending, reply detection, and enrichment.",
+        technologies: ["FastAPI", "Supabase", "OpenAI", "Qdrant", "Temporal", "Next.js"],
+        liveUrl: "https://paradigmoutreach.com/",
+        section: "work",
+    },
+
     // ── Live Projects ──────────────────────────────────────────────────────
+    {
+        title: "LogPose — Multi-Platform Web-Scraping API / SaaS",
+        image: imageAssetsVar.gap,
+        description: "Flagship, solo-built production SaaS: a unified web-scraping API spanning e-commerce, real-estate, social, business-lead, and search data. FastAPI backend on a self-managed VPS (nginx + Cloudflare) with a React/Vite frontend on Vercel. Features an async job queue with priority scheduling and resumable jobs, a managed residential/datacenter proxy pool, credit-based billing (Paystack), API-key auth, and background monitoring/alerting workers.",
+        technologies: ["FastAPI", "React", "PostgreSQL", "VPS", "nginx", "Cloudflare", "Paystack", "Async Jobs"],
+        liveUrl: "https://logposervices.com/",
+    },
     {
         title: "AllTools — Developer Utilities Platform",
         image: imageAssetsVar.pydfui,
@@ -92,20 +144,6 @@ export const Projects = [
         description: "Comprehensive audio extraction platform. FastAPI backend leveraging yt-dlp and FFmpeg for YouTube audio extraction. React frontend with YouTube Data API integration for video search and MP3 download management. Deployed on AWS EC2 with Docker containerization. Frontend: https://mpyjuice-ui.vercel.app/ | Docker Hub: https://hub.docker.com/r/dodan9/mpy3juices",
         technologies: ["React", "FastAPI", "AWS EC2", "Docker", "FFmpeg", "yt-dlp", "YouTube Data API"],
         liveUrl: "https://mpyjuice-ui.vercel.app/",
-    },
-    {
-        title: "Paradigm Sequencer (Contributor)",
-        image: imageAssetsVar.gap,
-        description: "Contributed to building the Paradigm Sequencer platform, assisting with implementation work and feature delivery.",
-        technologies: ["Web Application Development"],
-        liveUrl: "https://paradigmoutreach.com/",
-    },
-    {
-        title: "Artemis Delta — Website Maintenance",
-        image: imageAssetsVar.gap,
-        description: "Provided ongoing maintenance and improvements for a live production website, focusing on reliability, bug fixes, and incremental enhancements.",
-        technologies: ["Web Maintenance", "Bug Fixes"],
-        liveUrl: "https://artemisdelta.com/",
     },
 
     // ── GitHub Projects ────────────────────────────────────────────────────
